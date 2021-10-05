@@ -33,13 +33,25 @@ for m in ext_modules:
 
 setup(
     name='csgimu',
-
-    version='0.0.1',
+    version='0.0.2',
 
     description='This is a dummy repo for testing. Real code coming soon.',
+    long_description=open('README.rst').read(),
+    long_description_content_type="text/x-rst",
+    url='https://github.com/dlaidig/csgimu/',
+    project_urls={
+        'Documentation': 'https://csgimu.readthedocs.io/',
+    },
 
     author='Daniel Laidig',
     author_email='laidig@control.tu-berlin.de',
+    license='MIT',
+    classifiers=[
+        'Development Status :: 3 - Alpha',
+        'Intended Audience :: Science/Research',
+        'License :: OSI Approved :: MIT License',
+        'Programming Language :: Python :: 3',
+    ],
 
     packages=find_packages(exclude=['contrib', 'docs', 'tests']),
     include_package_data=True,
